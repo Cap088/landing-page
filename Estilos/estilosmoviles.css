@@ -1,0 +1,96 @@
+@media (max-width: 500px) {
+    .head-container {
+    width: 100%x;
+
+    display: content;
+    justify-content: left;
+    }
+
+    .head-right{
+        align-items: right;
+        display: flex;
+        justify-content: right;
+        margin-left: 220px;
+    }
+
+.grid-layout{
+    height: auto;
+    display: grid;
+    grid-template-areas:'cabecera'
+                        'menu'
+                        'lateral'
+                        'blog'
+                        'blog2'
+                        'imagen'
+                        'adicionales'
+                        'footer'
+                        'footer';
+    grid-template-rows: auto;
+    justify-content: stretch;
+
+}
+
+.caja.c2{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+
+}
+.text3{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+.text4{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    grid-area: blog2;
+    grid-template-columns: 1fr;
+    justify-content: center;
+
+}
+
+.icons p{
+    display: grid;
+    justify-content: center;
+    
+}
+
+.caja.c5{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    inline-size: none;
+}
+
+
+.adic2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+.adic3{
+    text-align: center;
+}
+
+.boton2{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.f1{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+}
+
+
+}
+
