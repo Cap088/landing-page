@@ -13,83 +13,85 @@
         margin-left: 220px;
     }
 
-.grid-layout{
-    height: auto;
-    display: grid;
-    grid-template-areas:'cabecera'
-                        'menu'
-                        'lateral'
-                        'blog'
-                        'blog2'
-                        'imagen'
-                        'adicionales'
-                        'footer'
-                        'footer';
-    grid-template-rows: auto;
-    justify-content: stretch;
+    .grid-layout{
+        height: auto;
+        display: grid;
+        grid-template-areas:'cabecera'
+                            'menu'
+                            'lateral'
+                            'blog'
+                            'blog2'
+                            'imagen'
+                            'adicionales'
+                            'footer'
+                            'footer';
+        grid-template-rows: auto;
+        justify-content: stretch;
 
-}
+    }
 
-.caja.c2{
-    display: flex;
-    justify-content: center;
-    padding: 100px;
+    .caja.c2{
+        display: flex;
+        justify-content: center;
+        padding: 100px;
 
-}
-.text3{
-    font-size: 60px;
-    display: flex;
-    justify-content: center;
-}
-.text4{
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-}
-.icons{
-    grid-area: blog2;
-    grid-template-columns: 1fr;
-    justify-content: center;
+    }
 
-}
+    .text3{
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+    }
 
-.icons p{
-    display: grid;
-    justify-content: center;
-    
-}
+    .text4{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+    }
 
-.caja.c5{
-    height: auto;
-    display: flex;
-    justify-content: center;
-    inline-size: none;
-}
+    .icons{
+        grid-area: blog2;
+        grid-template-columns: 1fr;
+        justify-content: center;
 
+    }
 
-.adic2{
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    text-align: center;
-}
+    .icons p{
+        display: grid;
+        justify-content: center;
 
-.adic3{
-    text-align: center;
-}
+    }
 
-.boton2{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+    .caja.c5{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        inline-size: none;
+    }
 
-}
+    .adic2{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        text-align: center;
+    }
 
-.f1{
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 1fr;
-}
+    .adic3{
+        text-align: center;
+    }
+
+    .boton2{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+
+    }
+
+    .f1{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
 
 
 }
