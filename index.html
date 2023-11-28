@@ -6,47 +6,54 @@
     <title>Proyecto landing modulo 4 sem5</title>
     <link rel="stylesheet" type="text/css" href="./Estilos/Estilos.css">
     <link rel="stylesheet" href="./Estilos/estilosmoviles.css">
-    <div>
-        <nav class="head-container">
-            <li>
-                <img src="./assets/img/Logosup.png" width="60px">
-            </li>
-            <li>
-                <a href="cat">Catalogo</a>
-            </li>
-            <li>
-                <a href="">¿Quiénes Somos?</a>
-            </li>
-            <li>
-                <a href="">Contacto</a>
-            </li>
-            <li class="head-right">
-                <a href="">Iniciar Sesión</a>
-            </li>
-        </nav>
-    </div>
+    
 </head>
 
+<!-- contenido de la cabecera -->
+<header>
+    <nav class="head-container">
+        <li>
+            <img src="./assets/img/Logosup.png">
+        </li>
+        <li>
+            <a href="cat">Catalogo</a>
+        </li>
+        <li>
+            <a href="">¿Quiénes Somos?</a>
+        </li>
+        <li>
+            <a href="">Contacto</a>
+        </li>
+        <li class="head-right">
+            <a href="">Iniciar Sesión</a>
+        </li>
+    </nav>
+</header>
 <body>
-    <div class="grid-layout">
+
+    <!-- contenedor principal -->
+    <div class="contenedor">
+
+        <!-- Boton de ofertas -->
         <div class="caja c1">
             <button><a href="">Hasta 50% OFF Conoce nuestras ofertas</a></button>
         </div>
-        
+        <!-- imagen lateral superior -->
         <div class="caja c2">
-            <img src="./assets/img/imgpricipal.jpg" width="700px">
+            <img src="./assets/img/imgpricipal.jpg" width="770px">
         </div>
 
+        <!-- contenido lateral superior -->
         <div class="caja c3">
-            <p class="text3">
+            <p class="text1">
                 Encuentra lo Necesario para Tu Mejor Proyecto
             </p>
-            <p class="text4"> 
+            <p class="text2"> 
                 Tenemos Las Mejores Novedades Para tu Nivel de Creatividad Realizaremos tu envio no importa donde estes
             </p>
-            <div class="text5">
+            <div class="text3">
                 <label for="email"></label>
-                <input  type="email"   title="email"  id="email" required placeholder="ingresa tu email...">
+                <input  type="email"   title="email" placeholder="Ingresa tu email...">
                 <button type="reset" value="restablecer"><a href="">Enviar</a></button>
                 <p class="tyc">
                     Te contactaremos en 24 horas. Aceptamos todas las tarjetas de crédito y débito.
@@ -54,12 +61,16 @@
                 </p>
             </div>
         </div>
+
+        <!-- contenido del blog -->
         <div class="caja c4">
             <div class="blog1">
                 <p class="blogp1">Ultima Tecnologia</p>
                 <p class="blogp2">Los mejores componentes importados</p>
                 <p class="blogp3">¿Ingenieros o Tecnicos? No importa el nivel Tenemos lo que necesitas</p>
             </div>
+
+            <!-- Contenido de iconos del blog central -->
             <div class="icons">
             <section class="icon1">
                 <img src="./assets/img/integrado.jpg" width="317px">
@@ -82,6 +93,7 @@
         </div>
         </div>
         
+        <!-- Contenido de Blog inferior -->
         <div class="caja c5">
             <img src="./assets/img/Repar.jpg" width="860px">
         </div>
@@ -90,9 +102,11 @@
             <p class="adic2">Cuentanos tus objetivos y te guiaremos en el objetivo que buscas para aumentar tu efectividad</p>
             <p class="adic3">Estamos equipados con los ingenieros mas capacitados para que encuentres las mejores soluciones y compres lo que realmente necesitas</p>
             <div class="boton2">
-                <button><a href="">Contactar ya mismo ♠</a></button>
+                <button><a href="">Contactar ya mismo @</a></button>
             </div>
-        </div>
+        </div>}
+
+        <!-- Contenido de pie de pagina -->
         <footer>
             <section class="f1">
                 <a href=""><img src="./assets/img/yout.png" width="30px"></a>
@@ -104,7 +118,7 @@
             <section class="f2">
                 <a href="">Soporte</a>
                 <br>
-                <a href="">Precios y cotizaciones</a>
+                <a href="">Cotizaciones</a>
                 <a href="">Certificaciones</a>
                 <a href="">Guías</a>
             </section>

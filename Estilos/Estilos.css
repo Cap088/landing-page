@@ -1,7 +1,4 @@
-*{
-    padding: 0%;
-}
-
+/* Estilos de la cabecera */
 .head-container{
     display: flex;
     justify-content: left;
@@ -36,17 +33,19 @@ li{
     justify-content: center;
     align-content: center;
     margin: 20px;
+    font-size: 20px;
 }
 
 .head-container a:hover{
     color: rgb(128, 123, 189);
 }
-
+ /* estilos del body */
 body{
     background-color: rgb(36, 37, 37);
 }
 
-.grid-layout{
+/* Estilos del contenedor */
+.contenedor{
     height: 450px;
     display: grid;
     grid-template-areas:'cabecera cabecera'
@@ -65,12 +64,16 @@ body{
     line-height: 50px;
 }
 
+/* Estilos del boton de ofertas */
 .caja.c1{
     grid-area: cabecera;
     background-color: rgb(36, 37, 37);
     width: auto;
     height: auto;
     margin-left: 20px;
+    display: flex;
+    align-items: right;
+    margin-left: 80px;
     }
 
 .caja.c1 a{
@@ -81,25 +84,24 @@ body{
 }
 
 .caja.c1 button{
-    background-color: black;
-    margin: 10px;
     width: 350px;
-    border-style: double;
-    display: flex;
-    justify-content: flex-start;
-    border-width: 1px solid;
-    border-radius: 15%;
+    height: 30px;
+    background-color: rgb(14, 13, 13);
+    border: 1px solid rgb(250, 243, 243);
+    border-radius: 10px;
 }
 
+/* Estilos imagen lateral superior */
 .caja.c2{
     grid-area: lateral;
     width: auto;
-    margin-left: 0px;
+    margin-left: 70px;
     display: flex;
-    justify-content: right;
+    justify-content: left;
 }
 
-.text3{
+/* Estilos del texto lateral superior */
+.text1{
     margin: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 60px;
@@ -107,7 +109,7 @@ body{
     line-height: 70px;
 }
 
-.text4{
+.text2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     color: rgb(193, 215, 230);
@@ -127,20 +129,33 @@ body{
 }
 
 .c3 button{
-    height: 32px;
-    margin: auto;
-    width: 70px;
-    border-style: outset;
-    border-color: rgb(137, 223, 223);
+    height: 45px;
+    margin: 5px;
+    width: 80px;
+    font-size: 17px;
+    border:3px solid rgb(137, 223, 223);
+    border-radius: 5px;
     color: rgb(241, 248, 248);
     background-color: rgb(126, 126, 245);
 }
 
 .c3 input{
-    width: 300px;
-    height: 25px;
+    width: 350px;
+    height: 35px;
+    font-size: 17px;
 }
 
+.c3 ::placeholder {
+    color: rgb(88, 85, 85);
+    font-size: 17px;
+}
+
+.tyc a:hover {
+    color: rgb(122, 115, 115);
+
+}
+
+/* Estilos del blog superior */
 .caja.c4{
     grid-area: blog;
     padding: 10px;
@@ -172,11 +187,55 @@ body{
     font-size: 40px;
 }
 
+/* Estilos de iconos del blog central */
+.icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+}
+
+.icons a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+}
+
+.icons p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    inline-size: auto;
+}
+
+.icon1{
+    box-shadow: 5px 10px 10px 5px rgb(243, 167, 100);
+    margin: 10px;
+}
+
+.icon2{
+    box-shadow: 5px 10px 10px 5px rgb(243, 167, 100);
+    margin: 10px;
+}
+
+.icon3{
+    box-shadow: 5px 10px 10px 5px rgb(243, 167, 100);
+    margin: 10px;
+}
+
+
+/* Estilos del blog inferior */
 .c5{
     grid-area: imagen;
     display: flex;
     justify-content: left;
     width: auto;
+}
+
+.boton2{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
 }
 
 .c6{
@@ -210,6 +269,8 @@ body{
     text-decoration: none;
     font-size: 15px;
 }
+
+/* Estilos de pie de pagina */
 
 footer{
     grid-area: footer;
@@ -254,23 +315,5 @@ footer a{
     text-decoration: none;
     color: gray;
     text-justify: distribute-all-lines;
-}
-
-.icons{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.icons a{
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    color: gray;
-}
-
-.icons p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    inline-size: auto;
 }
 

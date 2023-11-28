@@ -1,7 +1,21 @@
 @media (max-width: 500px) {
-    .head-container {
-    width: 100%x;
 
+    /* Estilos de la cabecera */
+
+   .head-container a{
+    font-size: 13px;
+
+    }
+
+   .head-container li img{
+    width: 50px;
+    height: 50px;
+   }
+    .head-container {
+    margin-right: 800px;
+    margin: 40px 10px;
+    width: 50px;
+    font-size: 10px;
     display: content;
     justify-content: left;
     }
@@ -10,10 +24,11 @@
         align-items: right;
         display: flex;
         justify-content: right;
-        margin-left: 220px;
+        margin-left: 20px;
     }
 
-    .grid-layout{
+    /* Estilos del contenedor */
+    .contenedor{
         height: auto;
         display: grid;
         grid-template-areas:'cabecera'
@@ -25,35 +40,85 @@
                             'adicionales'
                             'footer'
                             'footer';
-        grid-template-rows: auto;
+        grid-template-rows: 100% 100%;
+        grid-template-columns: 100%;
         justify-content: stretch;
 
+    }
+
+    /* Estilos de boton de ofertas */
+    .c1 button{
+        margin-left: -43px;
+    }
+
+    /* Estilos de imagen lateral superior */
+
+    .c2 img {
+        width: 410px;
     }
 
     .caja.c2{
         display: flex;
         justify-content: center;
-        padding: 100px;
-
+        padding: 10px;
+        margin: 10px 50px;
     }
 
-    .text3{
-        font-size: 60px;
-        display: flex;
+    /* Estilos del texto lateral superior */
+    .c3 {
+        grid-area: menu;
+        width: 80%;
+        margin: 50px;
+        display: grid;
         justify-content: center;
     }
 
-    .text4{
-        font-size: 25px;
-        display: flex;
+    .text1{
+        font-size: 50px;
+        display: grid;
         justify-content: center;
+        margin: 5px;
     }
 
+    /* Estilos del boton enviar */
+
+    .text3 a {
+        font-size: 17px;
+    }
+
+    .text2 {
+        font-size: 20px;
+    }
+
+    /* Estilos tyc */
+    .tyc {
+        font-size: 20px;
+        padding-top: 20px;
+        align-content: center;
+    }
+
+    
+
+     /* estilos de los iconos del blog central */
     .icons{
         grid-area: blog2;
         grid-template-columns: 1fr;
         justify-content: center;
+        margin: 10px;
+        padding: 10px;
 
+    }
+
+    .icon1{
+        margin: 10px;
+    }
+
+    .icon2{
+        margin: 10px;
+    }
+
+    .icon3{
+        margin: 10px;
     }
 
     .icons p{
@@ -61,6 +126,13 @@
         justify-content: center;
 
     }
+
+    /* estilos de imagen lateral inferior */
+    .c5 img {
+        width: 411px;
+    }
+
+    /* Estilos del blog inferior */
 
     .caja.c5{
         height: auto;
@@ -87,12 +159,33 @@
 
     }
 
+    /* Estilos de pie de pagina */
+
+    footer {
+
+        font-size: 13px;
+    }
+
     .f1{
         display: flex;
         flex-direction: column;
         grid-template-columns: 1fr;
+        margin: 10px;
+    }
+
+    .f2 {
+        margin: 10px;
+        
+            }
+
+    .f3 {
+        margin: 10px;
+    }
+
+    .f4 {
+        margin: 10px;
     }
 
 
-}
 
+}
